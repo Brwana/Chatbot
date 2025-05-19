@@ -2,7 +2,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 import torch
 
 # Load the trained model and tokenizer
-model_path = "./chatbot_model_two/final_model"
+model_path = "./chatbot_model_two_t5_base_continued/checkpoint-45000"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
 
